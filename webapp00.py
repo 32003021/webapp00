@@ -6,7 +6,6 @@ Here's our first attempt at using data to create a table:
 import streamlit as st
 import numpy as np
 import pandas as pd
-from PIL import Image
 
 #Titulo
 st.title("AUTOCUST")
@@ -17,9 +16,6 @@ st.subheader('Quem se organiza economiza')
 #Introdução
 st.markdown('Nas ultimas décadas temos observado uma grande instabilidade politica, jurídica e econômica no país, esse fatores de instabilidade trouxeram uma alta oscilação de preços. No mundo dos automóveis não é diferente, as taxas vem se tornando cada vez mais elevadas e o preços dos combustíveis sofreu uma grande alta.')
 st.markdown('A AutoCust vem para ajudar os donos de carros a entender todos os custos com o combustível do seu veiculo e economizar muito. Vamos entender a composição dos combustíveis, comparar a rentabilidade entre gasolina e o etanol, alertar os clientes sobre o pagamento do IPVA, licenciamento e outras  datas importantes.')
-    
-image = Image.open('Autocust.jpg')
-st.image(image, caption='Autocust')
 
 # Add a selectbox to the sidebar:
 add_selectbox = st.sidebar.selectbox(
