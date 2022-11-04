@@ -23,6 +23,14 @@ add_selectbox = st.sidebar.selectbox(
     ('Cadastro', 'Calculadora de Preços', 'Historico de Preços', 'Calendario')
 )
 
+if add_selectbox == 'Cadastro':
+    st.write("oi")
+elif add_selectbox == 'Calculadora de Preços':
+    st.write("tudo bem")
+elif add_selectbox == 'Historico de Preços':
+    st.write("amo a luana")
+else:
+    st.write("bjs")
 # Add a slider to the sidebar:
 add_slider = st.sidebar.slider(
     'Select a range of values',
