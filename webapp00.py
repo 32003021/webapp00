@@ -25,23 +25,25 @@ add_selectbox = st.sidebar.selectbox(
 
 if add_selectbox == 'Cadastro':
     st.write("oi")
+    # Add a slider to the sidebar:
+    add_slider = st.sidebar.slider(
+        'Select a range of values',
+        0.0, 100.0, (25.0, 75.0)
+    )
+
+    #Mapa de Campinas
+    map_data = pd.DataFrame(
+        np.random.randn(500, 2) / [50, 50] + [-22.90556, -47.06083],
+        columns=['lat', 'lon'])
+    st.map(map_data)
+
 elif add_selectbox == 'Calculadora de Preços':
     st.write("tudo bem")
 elif add_selectbox == 'Historico de Preços':
     st.write("amo a luana")
 else:
     st.write("bjs")
-# Add a slider to the sidebar:
-add_slider = st.sidebar.slider(
-    'Select a range of values',
-    0.0, 100.0, (25.0, 75.0)
-)
 
 
-#Mapa de Campinas
-map_data = pd.DataFrame(
-    np.random.randn(500, 2) / [50, 50] + [-22.90556, -47.06083],
-    columns=['lat', 'lon'])
 
-st.map(map_data)
   
