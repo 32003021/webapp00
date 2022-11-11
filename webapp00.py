@@ -12,9 +12,7 @@ df = pd.DataFrame({'col1': [1,2,3]})
 df  # 👈 Draw the dataframe
 
 x = 10
-'y', x  # 👈 Draw the string 'x' and then the value of x
-x = 20
-'y',20
+'x', x  # 👈 Draw the string 'x' and then the value of x
 
 # Also works with most supported chart types
 import matplotlib.pyplot as plt
