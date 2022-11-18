@@ -6,7 +6,8 @@ import streamlit as st
 
 This is some _markdown_.
 '''
-st.title("Autocust")
+st.title("Autocust",
+        primaryColor="#F63366")
 
 [theme]
 primaryColor="#F63366"
