@@ -1,13 +1,9 @@
 import streamlit as st
 
-# Draw a title and some text to the app:
-'''
-# This is the document title
+# Draw a title and some text to the ap
 
-This is some _markdown_.
-'''
-st.title("Autocust",
-        primaryColor="#F63366")
+new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">New image</p>'
+st.markdown(new_title, unsafe_allow_html=True)
 
 [theme]
 primaryColor="#F63366"
