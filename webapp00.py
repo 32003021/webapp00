@@ -2,7 +2,7 @@ import streamlit as st
 
 # Draw a title and some text to the ap
 
-new_title = '<p style="font-family:Open Sans; color:red; font-size: 55px;">New image</p>'
+new_title = '<p color:red; font-size: 55px;">New image</p>'
 st.markdown(new_title, unsafe_allow_html=True)
 
 [theme]
